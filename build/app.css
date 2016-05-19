@@ -1,1 +1,1 @@
-table{border-collapse:collapse}table td{padding:2px 4px;border:1px solid #eee}
+table{border:10px solid #eee}table tbody td:first-child{border-right:1px dashed #eee}

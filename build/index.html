@@ -5,17 +5,25 @@
         <title>Alexis Kalyuzhnyy JavaScript Developer for CompatibL</title>
         <link rel="stylesheet" href="vendor.css">
         <link rel="stylesheet" href="app.css">
-        <script type="text/javascript" src="vendor.js"></script>
-        <script type="text/javascript" src="app.js"></script>
     </head>
     
     <body ng-controller="main-worker">
         
-        <table>
-            <tr ng-repeat="color in colors">
-                <td>{{color.colorName}}</td><td style="background-color:{{color.hexValue}};"></td>
-            </tr>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Color name</td>
+                    <td>HEX value</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="color in colors">
+                    <td>{{color.colorName}}</td><td style="background-color:{{color.hexValue}};"></td>
+                </tr>
+            </tbody>
         </table>
         
+        <script type="text/javascript" src="vendor.js"></script>
+        <script type="text/javascript" src="app.js"></script>
     </body>
 </html>

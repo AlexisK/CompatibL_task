@@ -2,10 +2,10 @@
 @greylight: #eee;
 
 table {
-    border-collapse: collapse;
+    border: 10px solid @greylight;
     
-    td {
-        padding: 2px 4px;
-        border: 1px solid @greylight;
+    tbody td:first-child {
+        border-right: 1px dashed @greylight;
     }
 }
+
