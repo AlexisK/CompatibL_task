@@ -1,0 +1,1 @@
+function cr(r,o,e){e=e||document;var n=e.createElement(r);return o&&(n.className=o),n}var App=angular.module("App",[]).controller("main-worker",["$scope",function(r){jQuery.getJSON("data.json",function(o){r.colors=o.colorsArray,r.$apply()})}]);

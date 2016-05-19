@@ -1,0 +1,21 @@
+<html ng-app="App"l>
+    <head>
+        <base href="./"/>
+        <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Alexis Kalyuzhnyy JavaScript Developer for CompatibL</title>
+        <link rel="stylesheet" href="vendor.css">
+        <link rel="stylesheet" href="app.css">
+        <script type="text/javascript" src="vendor.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    
+    <body ng-controller="main-worker">
+        
+        <table>
+            <tr ng-repeat="color in colors">
+                <td>{{color.colorName}}</td><td style="background-color:{{color.hexValue}};"></td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
